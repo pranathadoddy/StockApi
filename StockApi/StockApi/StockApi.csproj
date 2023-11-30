@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\Framework.Application\Framework.Application.csproj" />
+	  <ProjectReference Include="..\Stock.DataAccess\Stock.DataAccess.csproj" />
+	  <ProjectReference Include="..\Stock.Repository\Stock.Repository.csproj" />
+    <ProjectReference Include="..\Stock.ServiceContract\Stock.ServiceContract.csproj" />
+    <ProjectReference Include="..\Stock.Service\Stock.Service.csproj" />
+	  <ProjectReference Include="..\Stock.Core\Stock.Core.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	</ItemGroup>
+
+</Project>
